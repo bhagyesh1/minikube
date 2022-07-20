@@ -22,7 +22,7 @@ pipeline {
             }   
         }
         
-        stage('minikube on DEV Environment') {  
+        stage('minikube on Master(main) Environment') {  
             
             when {
                 branch 'main'
