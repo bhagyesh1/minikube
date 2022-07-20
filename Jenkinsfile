@@ -1,7 +1,7 @@
 pipeline {
 
     agent any
-    
+
     stages {    
         stage('minikube on DEV Environment') {  
             
@@ -13,7 +13,8 @@ pipeline {
                 
                 echo "Welcome to Windows 10! Minikube going to on start mode"
                 bat "minikube start"
-                bat "minikube dashboard"
+                bat "kubectl get no"
+                bat "kubectl get ns"
             }   
         }
         
@@ -26,8 +27,8 @@ pipeline {
             steps {
                 
                 echo "Welcome to Windows 10! Minikube going to on start mode"
-                bat "minikube start"
-                bat "minikube dashboard"
+
+            
             }   
         }  
   
